@@ -1,0 +1,18 @@
+touch dan sonraki file adının başına "." (nokta) getirildiği zaman bu dosya gizlenmiş bir dosya halinde ekleniyor
+--
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -> güncelleme olarak hidden bir file için şunlar yapılmalıdır => 
+
+touch .gitignore dan sonra attrib +h .gitignore yazılmalıdır ve bu sayede bir file a hidden atrrib utu ekleyebiliyoruz ( bu güncelleme ilk satır notunu override ediyordur ) 
+--
+cached -> önbelleğe alınmış
+--
+-r da eklenirse eğer "recursive" olanlar da bu işin içine girebileceğini ima ederim
+--
+gitignore dosyasının içerisine git den ignore lanmak istenen dosyaların adlarını bu dosyaya yazıyoruz, bu dosya
+aracılığı ile de git işlemlerinden ignore lu hale geçmiş oluyorlar
+--
+# işareti dosya içerisinde comment olarak kullanılır ve işaretten sonraki string karakterler işlemci tarafından
+işlenmezler
+--
+#.txt ise # sonraki . dan sonraki bütün formatların ignore lu hale gelmesini referans eder (.txt bir örnektir)
+--
